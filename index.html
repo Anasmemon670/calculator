@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        body{
+    background-image: url(pexels-etha-34545-128234.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+    font-size: 30px;
+    background-color: rgba(6, 123, 240, 0.685);
+    border-radius: 15px;
+    border: none;
+}
+
+button:hover{
+    font-size: 35px;
+    transition: font-size 1s ease-in-out;
+    background-color: rgba(49, 109, 168, 0.685);
+    cursor: pointer;
+}
+
+label{
+    color: snow;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    outline: none;
+}
+
+header{
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    border: 3px solid white;
+    animation: anima 4s ease-in-out infinite;
+}
+
+@keyframes anima {
+    0% {
+        border: 3px solid white;
+        /* background-color: rgb(39, 37, 37); */
+    }
+    25% {
+        border: 5px solid gray;
+        /* background-color: rgb(14, 12, 12); */
+    }
+    50% {
+        border: 10px solid salmon;
+        /* background-color: rgb(70, 64, 64); */
+    }
+    75% {
+        border: 8px solid blueviolet;
+        /* background-color: rgba(46, 31, 31, 0.582); */
+    }
+    100% {
+        border: 5px solid rgb(0, 0, 0);
+        /* background-color: rgb(0, 0, 0); */
+    }
+}
+
+#container{
+    font-size: 25px;
+    color: seashell;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+    </style>
+    <header>
+    <label for="">
+        CALCULATOR : <input type="number" id="number1">
+    </label>
+    <br>
+    <br>
+    <label for="">
+        CALCULATOR : <input type="number" id="number2">
+    </label>
+    <br>
+    <br>
+
+    <button onclick="sum ()">+</button>
+    <br>
+    <br>
+    <button onclick="minus ()">-</button>
+    <br>
+    <br>
+    <button onclick="multiply ()">x</button>
+    <br>
+    <br>
+    <button onclick="divid ()"><i class="fa-solid fa-divide"></i></button>
+
+    <div id="container"></div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function sum (){
+            let number1 = Number(document.getElementById("number1").value)
+            let number2 = Number(document.getElementById("number2").value)
+            console.log(container)
+            document.getElementById("container").innerText = number1 + number2;
+        }
+
+        function minus (){
+            let number1 = Number(document.getElementById("number1").value)
+            let number2 = Number(document.getElementById("number2").value)
+            console.log(container)
+            document.getElementById("container").innerText = number1 - number2;
+        }
+
+        function multiply (){
+            let number1 = Number(document.getElementById("number1").value)
+            let number2 = Number(document.getElementById("number2").value)
+            console.log(container)
+            document.getElementById("container").innerText = number1 * number2;
+        }
+
+        function divid (){
+            let number1 = Number(document.getElementById("number1").value)
+            let number2 = Number(document.getElementById("number2").value)
+            console.log(container)
+            document.getElementById("container").innerText = number1 / number2;
+        }
+
+
+    </script>
+</body>
+</html>
